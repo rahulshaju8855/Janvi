@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Beginning | Rahul & Janvi 💙</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #dbeafe; /* light blue text */
+            text-align: center;
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 60px 20px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #60a5fa; /* blue heading */
+        }
+
+        h2 {
+            color: #93c5fd;
+            font-weight: normal;
+        }
+
+        .highlight {
+            color: #3b82f6; /* strong blue highlight */
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #2563eb;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #bfdbfe;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="https://www2.cs.uic.edu/~i101/SoundFiles/CanonInD.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>The First Day I Heard “Chetta” 💙</h1>
+    <h2>Our Story – Rahul & Janvi</h2>
+
+    <p>
+        It was the beginning of our NSS life...
+        After that terrifying welcome party by seniors,
+        we had an exam.
+    </p>
+
+    <p>
+        You were walking in front of me...
+        I was just behind you...
+        And then you turned back and said,
+    </p>
+
+    <p class="highlight">
+        “Chetta… ithinte answer entha?”
+    </p>
+
+    <p>
+        Maybe for you it was just a question.
+        But for me…
+        it became a memory that never left.
+    </p>
+
+    <p>
+        Four years passed.
+        Silence happened.
+        Distance happened.
+        But that moment?
+        It still lives in my heart.
+    </p>
+
+    <p class="highlight">
+        If that was our first chapter…
+        I hope one day we write the next one together.
+    </p>
+
+    <button onclick="showMessage()">Click If You Believe In Us 💙</button>
+
+    <footer>
+        Made with 💙 by Rahul
+    </footer>
+</div>
+
+<script>
+    var password = prompt("Enter the password to see our story 💙");
+    if (password !== "janvi14") {
+        document.body.innerHTML = "<h2 style='color:white;margin-top:100px;'>Access Denied 💙</h2>";
+    } else {
+        document.body.style.opacity = "1";
+        document.getElementById("bgMusic").play().catch(() => {});
+    }
+
+    function showMessage() {
+        alert("Maybe our story is not finished yet 💙");
+    }
+</script>
+
+</body>
+</html>
